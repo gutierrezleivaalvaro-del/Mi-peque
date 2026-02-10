@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi pequeña 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #ffd6e8, #fff);
+      color: #5a2a3a;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      font-size: 2em;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .signature {
+      margin-top: 25px;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #ff6f9c;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background: #ff4f86;
+    }
+
+    iframe {
+      margin-top: 20px;
+      border-radius: 15px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Para mi pequeña 💕</h1>
+    <div class="heart">❤️</div>
+
+    <div class="card">
+      <p>
+        Mi pequeña,<br><br>
+        No hay día en que no piense en ti, en tu sonrisa,
+        en la forma en que sin darte cuenta me haces sentir en casa.
+        Esto no es solo una página, es un pedacito de mi corazón
+        que quería regalarte en este San Valentín.<br><br>
+        Gracias por existir, por ser tú,
+        y por hacer mis días más bonitos.
+      </p>
+
+      <div class="signature">
+        Con todo mi amor,<br>
+        <strong>tu gordo 💖</strong>
+      </div>
+
+      <button onclick="mostrarMusica()">🎶 Reproducir nuestra canción</button>
+
+      <div id="musica" style="display:none;">
+        <iframe width="100%" height="152"
+          src="https://www.youtube.com/embed/7GzZK0s8Y2I"
+          title="Camila Gallardo - Pa' callar tus penas"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <footer>
+      Hecho con amor 💘 – San Valentín
+    </footer>
+  </div>
+
+  <script>
+    function mostrarMusica() {
+      document.getElementById("musica").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
